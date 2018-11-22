@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+</head>
+
+
+<body style="height:100vh;">
+  
+    <nav class="navbar navbar-light bg-light">
+        <div class="container pl-5 pr-5">
+            <a class="navbar-brand" id='username'> </a>
+            <ul class="navbar-nav left">
+                <li class="nav-item active">
+                  <a style="cursor:pointer" class="nav-link" onclick="sair()" >Sair <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+
+
+  <div class="py-2">
+    <div class="container">
+      <div class="row">
+        <div class="text-center mx-auto col-lg-8 col-10">
+          <h1 class="mb-3">informações sobre <b id="nome"></b></h1>
+          <div id="carousel1" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
+            <div class="carousel-inner">
+              <div class="carousel-item active"> <img class="d-block w-100" src="https://static.pingendo.com/cover-moon.svg">
+              </div>
+              <div class="carousel-item"> <img class="d-block w-100" src="https://static.pingendo.com/cover-bubble-light.svg">
+              </div>
+              <div class="carousel-item"> <img class="d-block w-100" src="https://static.pingendo.com/cover-bubble-dark.svg">
+              </div>
+            </div>
+            <ol class="carousel-indicators">
+              <li data-target="#carousel1" data-slide-to="0" class="active"> </li>
+              <li data-target="#carousel1" data-slide-to="1"> </li>
+              <li data-target="#carousel1" data-slide-to="2"> </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-2" style="background-image: linear-gradient(to left bottom, rgba(189, 195, 199, .75), rgba(44, 62, 80, .75)); background-size: 100%;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 px-4 px-md-0">
+          <div class="row mb-4">
+            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-1.svg"
+                width="100" alt="Card image cap"> </div>
+            <div class="col-9">
+              <h4>Email</h4>
+              <p class="mb-0" id="email"></p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-2.svg"
+                width="100" alt="Card image cap"> </div>
+            <div class="col-9">
+              <h4> <b>CPF</b></h4>
+              <p class="mb-0" id="cpf"></p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-3.svg"
+                width="100" alt="Card image cap"> </div>
+            <div class="col-9">
+              <h4> <b>CEP</b></h4>
+              <p class="mb-0" id="cep"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 px-4 px-md-0">
+          <div class="row mb-4">
+            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-2.svg"
+                width="100" alt="Card image cap"> </div>
+            <div class="col-9">
+              <h4>nome e sobrenome</h4>
+              <p class="mb-0" id="nomecompleto"></p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-3.svg"
+                width="100" alt="Card image cap"> </div>
+            <div class="col-9">
+              <h4> <b>data de nascimento</b></h4>
+              <p class="mb-0" id="dn"></p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-1.svg"
+                width="100" alt="Card image cap"> </div>
+            <div class="col-9">
+              <h4> <b>Cidade</b></h4>
+              <p class="mb-0" id="cidade"></p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-1.svg"
+                width="100" alt="Card image cap"> </div>
+            <div class="col-9">
+              <h4> <b>País</b></h4>
+              <p class="mb-0" id="pais"></p>
+            </div>
+
+          </div>
+          <div class="row mb-4">
+            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-1.svg"
+                width="100" alt="Card image cap"> </div>
+            <div class="col-9">
+              <h4> <b>UF</b></h4>
+              <p class="mb-0" id="uf"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 px-4 px-md-0">
+          <div class="row mb-4">
+            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-3.svg"
+                width="100" alt="Card image cap"> </div>
+            <div class="col-9">
+              <h4>contato</h4>
+              <p class="mb-0" id="telefone"></p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-1.svg"
+                width="100" alt="Card image cap"> </div>
+            <div class="col-9">
+              <h4> <b>Profissão</b></h4>
+              <p class="mb-0" id="prof"></p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-1.svg"
+                width="100" alt="Card image cap"> </div>
+            <div class="col-9">
+              <h4>Genero</h4>
+              <p class="mb-0" id="genero"></p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-2.svg"
+                width="100" alt="Card image cap"> </div>
+            <div class="col-9">
+              <h4> <b>escolaridade</b></h4>
+              <p class="mb-0" id="escolaridade"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function readCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+      }
+      return null;
+    }
+    // var userlogin = readCookie('username' );
+    var userlogin = readCookie('username');
+
+    var usersenha = readCookie('senha');
+    var senhacookie = readCookie('senha_' + userlogin);
+
+    if(userlogin == ''){
+    alert('nenhum usuario logado\n redirecionando para pagina inicial')
+
+    window.location="/"
+    }else{
+
+
+    
+
+
+    if (usersenha == senhacookie) {
+
+      var cep = readCookie('cep_' + userlogin);
+      var cidade = readCookie('cidade_' + userlogin);
+      var cpf = readCookie('cpf_' + userlogin);
+      var ddd = readCookie('ddd_' + userlogin);
+      var dn = readCookie('dn_' + userlogin);
+      var email = readCookie('email_' + userlogin);
+      var escolaridade = readCookie('escolaridade_' + userlogin);
+      var nome = readCookie('firstName_' + userlogin);
+      var sobrenome = readCookie('lastName_' + userlogin);
+
+      var pais = readCookie('pais_' + userlogin);
+      var prof = readCookie('prof_' + userlogin);
+      var genero = readCookie('sexo_' + userlogin);
+      var telefone = readCookie('telefone_' + userlogin);
+      var uf = readCookie('uf_' + userlogin);
+      var username = readCookie('username_' + userlogin);
+
+
+
+      document.getElementById("cep").innerHTML = cep
+      document.getElementById("cidade").innerHTML = cidade
+      document.getElementById("cpf").innerHTML = cpf
+      document.getElementById("dn").innerHTML = dn
+      document.getElementById("email").innerHTML = email
+      document.getElementById("escolaridade").innerHTML = escolaridade
+      document.getElementById("nome").innerHTML = nome
+
+      document.getElementById("nomecompleto").innerHTML = nome + " " + sobrenome
+
+      document.getElementById("pais").innerHTML = pais
+      document.getElementById("prof").innerHTML = prof
+      document.getElementById("genero").innerHTML = genero
+      document.getElementById("telefone").innerHTML = "(" + ddd + ")" + telefone
+      document.getElementById("uf").innerHTML = uf
+      document.getElementById("username").innerHTML = "seja bem vindo"+" "+username
+    } else {
+      alert('senha incorreta')
+      window.location="/"
+    }
+  }
+    function sair() {
+      window.location="/"
+      document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";      
+      document.cookie = "senha=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

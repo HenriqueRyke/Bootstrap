@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+
+<body style="height:100vh;">
+    <div class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="text-center col-md-7 mx-auto"> <i class="fa d-block fa-bullseye fa-5x mb-4 text-info"></i>
+                    <h2>Cadastre-se</h2>
+                    <p class="lead">use este formulario para inserir suas informaçoes e fazer o seu cadastro em nosso
+                        site.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 order-md-1">
+                    <h4 class="mb-3">Cadastro</h4>
+                    <div id="form" class="needs-validation" novalidate="">
+                        <div class="row">
+                            <div class="col-md-6 mb-3"> <label for="firstName">Nome</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="ex: henrique" value=""
+                                    required="">
+                                <div class="invalid-feedback"> Valid first name is required. </div>
+                            </div>
+                            <div class="col-md-6 mb-3"> <label for="lastName">Sobrenome</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="ex: rabelo" value=""
+                                    required="">
+                                <div class="invalid-feedback"> Valid last name is required. </div>
+                            </div>
+                        </div>
+                        <div class="mb-3"> <label for="cpf">* CPF</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="cpf" required="" placeholder="123.456.789-00">
+                                <div class="invalid-feedback" style="width: 100%;"> Your username is required. </div>
+                            </div>
+                        </div>
+                        <div class="mb-3"> <label for="dn">Data de nascimento</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend"> <span class="input-group-text">@</span> </div>
+                                <input type="date" class="form-control" id="dn" required="" placeholder="31/12/1999">
+                                <div class="invalid-feedback" style="width: 100%;"> Your username is required. </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 mb-3"> <label for="Genero">Genero</label> <select class="custom-select d-block w-100"
+                                    id="sexo" required="">
+                                    <option value="">escolha seu Genero</option>
+                                    <option value="masculino">Masculino</option>
+                                    <option value="feminino">Feminino</option>
+                                    <option value="nao informado">prefiro não dizer</option>
+                                </select>
+                                <div class="invalid-feedback"> Please select a valid country. </div>
+                            </div>
+                            <div class="col-md-4 mb-3"> <label for="prof">Profissão</label> <select class="custom-select d-block w-100"
+                                    id="prof" required="">
+                                    <option value="">escolha sua profissão...</option>
+                                    <option value="Administração">Administração</option>
+                                    <option value="Administração Pública">Administração Pública</option>
+                                    <option value="Agronegócios e Agropecuária">Agronegócios e Agropecuária</option>
+                                    <option value="Ciências Aeronáuticas">Ciências Aeronáuticas</option>
+                                    <option value="Ciências Atuariais">Ciências Atuariais</option>
+                                    <option value="Ciências Contábeis">Ciências Contábeis</option>
+                                    <option value="Ciências Econômicas">Ciências Econômicas</option>
+                                    <option value="Comércio Exterior">Comércio Exterior</option>
+                                    <option value="Defesa e Gestão Estratégica Internacional">Defesa e Gestão
+                                        Estratégica Internacional</option>
+                                    <option value="Gastronomia">Gastronomia</option>
+                                    <option value="Gestão Comercial">Gestão Comercial</option>
+                                    <option value="Gestão de Recursos Humanos">Gestão de Recursos Humanos</option>
+                                    <option value="Gestão de Segurança Privada">Gestão de Segurança Privada</option>
+                                    <option value="Gestão de Seguros">Gestão de Seguros</option>
+                                    <option value="Gestão de Turismo">Gestão de Turismo</option>
+                                    <option value="Gestão Financeira">Gestão Financeira</option>
+                                    <option value="Gestão Pública">Gestão Pública</option>
+                                    <option value="Hotelaria">Hotelaria</option>
+                                    <option value="Logística">Logística</option>
+                                    <option value="Marketing">Marketing</option>
+                                    <option value="Negócios Imobiliários">Negócios Imobiliários</option>
+                                    <option value="Pilotagem Profissional de Aeronaves">Pilotagem Profissional de
+                                        Aeronaves</option>
+                                    <option value="Processos Gerenciais">Processos Gerenciais</option>
+                                    <option value="Segurança Pública">Segurança Pública</option>
+                                    <option value="Turismo">Turismo</option>
+                                    <option value="Animação">Animação</option>
+                                    <option value="Arquitetura e Urbanismo">Arquitetura e Urbanismo</option>
+                                    <option value="Artes Visuais">Artes Visuais</option>
+                                    <option value="Comunicação das Artes do Corpo">Comunicação das Artes do Corpo</option>
+                                    <option value="Conservação e Restauro">Conservação e Restauro</option>
+                                    <option value="Dança">Dança</option>
+                                    <option value="Design">Design</option>
+                                    <option value="Design de Games">Design de Games</option>
+                                    <option value="Design de Interiores">Design de Interiores</option>
+                                    <option value="Design de Moda">Design de Moda</option>
+                                    <option value="Fotografia">Fotografia</option>
+                                    <option value="História da Arte">História da Arte</option>
+                                    <option value="Jogos Digitais">Jogos Digitais</option>
+                                    <option value="Luteria">Luteria</option>
+                                    <option value="Música">Música</option>
+                                    <option value="Produção Cênica">Produção Cênica</option>
+                                    <option value="Produção Fonográfica">Produção Fonográfica</option>
+                                    <option value="Teatro">Teatro</option>
+                                    <option value="Agroecologia">Agroecologia</option>
+                                    <option value="Agronomia">Agronomia</option>
+                                    <option value="Alimentos">Alimentos</option>
+                                    <option value="Biocombustíveis">Biocombustíveis</option>
+                                    <option value="Biotecnologia">Biotecnologia</option>
+                                    <option value="Biotecnologia e Bioquímica">Biotecnologia e Bioquímica</option>
+                                    <option value="Ciência e Tecnologia de Alimentos">Ciência e Tecnologia de Alimentos</option>
+                                    <option value="Ciências Agrárias">Ciências Agrárias</option>
+                                    <option value="Ciências Biológicas">Ciências Biológicas</option>
+                                    <option value="Ciências Naturais e Exatas">Ciências Naturais e Exatas</option>
+                                    <option value="Ecologia">Ecologia</option>
+                                    <option value="Geofísica">Geofísica</option>
+                                    <option value="Geologia">Geologia</option>
+                                    <option value="Gestão Ambiental">Gestão Ambiental</option>
+                                    <option value="Medicina Veterinária">Medicina Veterinária</option>
+                                    <option value="Meteorologia">Meteorologia</option>
+                                    <option value="Oceanografia">Oceanografia</option>
+                                    <option value="Produção de Bebidas">Produção de Bebidas</option>
+                                    <option value="Produção Sucroalcooleira">Produção Sucroalcooleira</option>
+                                    <option value="Rochas Ornamentais">Rochas Ornamentais</option>
+                                    <option value="Zootecnia">Zootecnia</option>
+                                    <option value="Análise e Desenvolvimento de Sistemas">Análise e Desenvolvimento de
+                                        Sistemas</option>
+                                    <option value="Astronomia">Astronomia</option>
+                                    <option value="Banco de Dados">Banco de Dados</option>
+                                    <option value="Ciência da Computação">Ciência da Computação</option>
+                                    <option value="Ciência e Tecnologia">Ciência e Tecnologia</option>
+                                    <option value="Computação">Computação</option>
+                                    <option value="Estatística">Estatística</option>
+                                    <option value="Física">Física</option>
+                                    <option value="Gestão da Tecnologia da Informação">Gestão da Tecnologia da
+                                        Informação</option>
+                                    <option value="Informática Biomédica">Informática Biomédica</option>
+                                    <option value="Matemática">Matemática</option>
+                                    <option value="Nanotecnologia">Nanotecnologia</option>
+                                    <option value="Química">Química</option>
+                                    <option value="Redes de Computadores">Redes de Computadores</option>
+                                    <option value="Segurança da Informação">Segurança da Informação</option>
+                                    <option value="Sistemas de Informação">Sistemas de Informação</option>
+                                    <option value="Sistemas para Internet">Sistemas para Internet</option>
+                                    <option value="Arqueologia">Arqueologia</option>
+                                    <option value="Ciências do Consumo">Ciências do Consumo</option>
+                                    <option value="Ciências Humanas">Ciências Humanas</option>
+                                    <option value="Ciências Sociais">Ciências Sociais</option>
+                                    <option value="Cooperativismo">Cooperativismo</option>
+                                    <option value="Direito">Direito</option>
+                                    <option value="Escrita Criativa">Escrita Criativa</option>
+                                    <option value="Estudos de Gênero e Diversidade">Estudos de Gênero e Diversidade</option>
+                                    <option value="Filosofia">Filosofia</option>
+                                    <option value="Geografia">Geografia</option>
+                                    <option value="Gestão de Cooperativas">Gestão de Cooperativas</option>
+                                    <option value="História">História</option>
+                                    <option value="Letras">Letras</option>
+                                    <option value="Libras">Libras</option>
+                                    <option value="Linguística">Linguística</option>
+                                    <option value="Museologia">Museologia</option>
+                                    <option value="Pedagogia">Pedagogia</option>
+                                    <option value="Psicopedagogia">Psicopedagogia</option>
+                                    <option value="Relações Internacionais">Relações Internacionais</option>
+                                    <option value="Serviço Social">Serviço Social</option>
+                                    <option value="Serviços Judiciários e Notariais">Serviços Judiciários e Notariais</option>
+                                    <option value="Teologia">Teologia</option>
+                                    <option value="Tradutor e Intérprete">Tradutor e Intérprete</option>
+                                    <option value="Arquivologia">Arquivologia</option>
+                                    <option value="Biblioteconomia">Biblioteconomia</option>
+                                    <option value="Cinema e Audiovisual">Cinema e Audiovisual</option>
+                                    <option value="Comunicação em Mídias Digitais">Comunicação em Mídias Digitais</option>
+                                    <option value="Comunicação Institucional">Comunicação Institucional</option>
+                                    <option value="Comunicação Organizacional">Comunicação Organizacional</option>
+                                    <option value="Educomunicação">Educomunicação</option>
+                                    <option value="Estudos de Mídia">Estudos de Mídia</option>
+                                    <option value="Eventos">Eventos</option>
+                                    <option value="Gestão da Informação">Gestão da Informação</option>
+                                    <option value="Jornalismo">Jornalismo</option>
+                                    <option value="Produção Audiovisual">Produção Audiovisual</option>
+                                    <option value="Produção Cultural">Produção Cultural</option>
+                                    <option value="Produção Editorial">Produção Editorial</option>
+                                    <option value="Produção Multimídia">Produção Multimídia</option>
+                                    <option value="Produção Publicitária">Produção Publicitária</option>
+                                    <option value="Publicidade e Propaganda">Publicidade e Propaganda</option>
+                                    <option value="Rádio, TV e Internet">Rádio, TV e Internet</option>
+                                    <option value="Relações Públicas">Relações Públicas</option>
+                                    <option value="Secretariado">Secretariado</option>
+                                    <option value="Secretariado Executivo">Secretariado Executivo</option>
+                                    <option value="Agrimensura">Agrimensura</option>
+                                    <option value="Aquicultura">Aquicultura</option>
+                                    <option value="Automação Industrial">Automação Industrial</option>
+                                    <option value="Construção Civil">Construção Civil</option>
+                                    <option value="Construção Naval">Construção Naval</option>
+                                    <option value="Eletrônica Industrial">Eletrônica Industrial</option>
+                                    <option value="Eletrotécnica Industrial">Eletrotécnica Industrial</option>
+                                    <option value="Energias Renováveis">Energias Renováveis</option>
+                                    <option value="Engenharia Acústica">Engenharia Acústica</option>
+                                    <option value="Engenharia Aeronáutica">Engenharia Aeronáutica</option>
+                                    <option value="Engenharia Agrícola">Engenharia Agrícola</option>
+                                    <option value="Engenharia Ambiental e Sanitária">Engenharia Ambiental e Sanitária</option>
+                                    <option value="Engenharia Biomédica">Engenharia Biomédica</option>
+                                    <option value="Engenharia Bioquímica, de Bioprocessos e Biotecnologia">Engenharia
+                                        Bioquímica, de Bioprocessos e Biotecnologia</option>
+                                    <option value="Engenharia Cartográfica e de Agrimensura">Engenharia Cartográfica e
+                                        de Agrimensura</option>
+                                    <option value="Engenharia Civil">Engenharia Civil</option>
+                                    <option value="Engenharia da Computação">Engenharia da Computação</option>
+                                    <option value="Engenharia de Alimentos">Engenharia de Alimentos</option>
+                                    <option value="Engenharia de Biossistemas">Engenharia de Biossistemas</option>
+                                    <option value="Engenharia de Controle e Automação">Engenharia de Controle e
+                                        Automação</option>
+                                    <option value="Engenharia de Energia">Engenharia de Energia</option>
+                                    <option value="Engenharia de Inovação">Engenharia de Inovação</option>
+                                    <option value="Engenharia de Materiais">Engenharia de Materiais</option>
+                                    <option value="Engenharia de Minas">Engenharia de Minas</option>
+                                    <option value="Engenharia de Pesca">Engenharia de Pesca</option>
+                                    <option value="Engenharia de Petróleo">Engenharia de Petróleo</option>
+                                    <option value="Engenharia de Produção">Engenharia de Produção</option>
+                                    <option value="Engenharia de Segurança no Trabalho">Engenharia de Segurança no
+                                        Trabalho</option>
+                                    <option value="Engenharia de Sistemas">Engenharia de Sistemas</option>
+                                    <option value="Engenharia de Software">Engenharia de Software</option>
+                                    <option value="Engenharia de Telecomunicações">Engenharia de Telecomunicações</option>
+                                    <option value="Engenharia de Transporte e da Mobilidade">Engenharia de Transporte e
+                                        da Mobilidade</option>
+                                    <option value="Engenharia Elétrica">Engenharia Elétrica</option>
+                                    <option value="Engenharia Eletrônica">Engenharia Eletrônica</option>
+                                    <option value="Engenharia Física">Engenharia Física</option>
+                                    <option value="Engenharia Florestal">Engenharia Florestal</option>
+                                    <option value="Engenharia Hídrica">Engenharia Hídrica</option>
+                                    <option value="Engenharia Industrial Madeireira">Engenharia Industrial Madeireira</option>
+                                    <option value="Engenharia Mecânica">Engenharia Mecânica</option>
+                                    <option value="Engenharia Mecatrônica">Engenharia Mecatrônica</option>
+                                    <option value="Engenharia Metalúrgica">Engenharia Metalúrgica</option>
+                                    <option value="Engenharia Naval">Engenharia Naval</option>
+                                    <option value="Engenharia Nuclear">Engenharia Nuclear</option>
+                                    <option value="Engenharia Química">Engenharia Química</option>
+                                    <option value="Engenharia Têxtil">Engenharia Têxtil</option>
+                                    <option value="Fabricação Mecânica">Fabricação Mecânica</option>
+                                    <option value="Geoprocessamento">Geoprocessamento</option>
+                                    <option value="Gestão da Produção Industrial">Gestão da Produção Industrial</option>
+                                    <option value="Gestão da Qualidade">Gestão da Qualidade</option>
+                                    <option value="Irrigação e Drenagem">Irrigação e Drenagem</option>
+                                    <option value="Manutenção de Aeronaves">Manutenção de Aeronaves</option>
+                                    <option value="Manutenção Industrial (T/L)">Manutenção Industrial (T/L)</option>
+                                    <option value="Materiais">Materiais</option>
+                                    <option value="Mecatrônica Industrial">Mecatrônica Industrial</option>
+                                    <option value="Mineração">Mineração</option>
+                                    <option value="Papel e Celulose">Papel e Celulose</option>
+                                    <option value="Petróleo e Gás">Petróleo e Gás</option>
+                                    <option value="Processos Metalúrgicos">Processos Metalúrgicos</option>
+                                    <option value="Processos Químicos">Processos Químicos</option>
+                                    <option value="Produção Têxtil">Produção Têxtil</option>
+                                    <option value="Saneamento Ambiental">Saneamento Ambiental</option>
+                                    <option value="Segurança no Trabalho">Segurança no Trabalho</option>
+                                    <option value="Silvicultura">Silvicultura</option>
+                                    <option value="Sistemas Biomédicos">Sistemas Biomédicos</option>
+                                    <option value="Sistemas de Telecomunicações">Sistemas de Telecomunicações</option>
+                                    <option value="Sistemas Elétricos">Sistemas Elétricos</option>
+                                    <option value="Sistemas Embarcados">Sistemas Embarcados</option>
+                                    <option value="Transporte">Transporte</option>
+                                    <option value="Artes">Artes</option>
+                                    <option value="Biossistemas">Biossistemas</option>
+                                    <option value="Ciência da Terra">Ciência da Terra</option>
+                                    <option value="Ciência e Economia">Ciência e Economia</option>
+                                    <option value="Ciência e Tecnologia">Ciência e Tecnologia</option>
+                                    <option value="Ciência e Tecnologia das Águas/do Mar">Ciência e Tecnologia das
+                                        Águas/do Mar</option>
+                                    <option value="Ciências Agrárias">Ciências Agrárias</option>
+                                    <option value="Ciências da Natureza e suas Tecnologias">Ciências da Natureza e suas
+                                        Tecnologias</option>
+                                    <option value="Cultura, Linguagens e Tecnologias Aplicadas">Cultura, Linguagens e
+                                        Tecnologias Aplicadas</option>
+                                    <option value="Energia e Sustentabilidade">Energia e Sustentabilidade</option>
+                                    <option value="Humanidades">Humanidades</option>
+                                    <option value="Linguagens e Códigos e suas Tecnologias">Linguagens e Códigos e suas
+                                        Tecnologias</option>
+                                    <option value="Matemática e Computação e suas Tecnologias">Matemática e Computação
+                                        e suas Tecnologias</option>
+                                    <option value="Saúde">Saúde</option>
+                                    <option value="Tecnologia da Informação">Tecnologia da Informação</option>
+                                    <option value="Biomedicina">Biomedicina</option>
+                                    <option value="Educação Física">Educação Física</option>
+                                    <option value="Enfermagem">Enfermagem</option>
+                                    <option value="Esporte">Esporte</option>
+                                    <option value="Estética e Cosmética">Estética e Cosmética</option>
+                                    <option value="Farmácia">Farmácia</option>
+                                    <option value="Fisioterapia">Fisioterapia</option>
+                                    <option value="Fonoaudiologia">Fonoaudiologia</option>
+                                    <option value="Gerontologia">Gerontologia</option>
+                                    <option value="Gestão Desportiva e de Lazer">Gestão Desportiva e de Lazer</option>
+                                    <option value="Gestão em Saúde">Gestão em Saúde</option>
+                                    <option value="Gestão Hospitalar">Gestão Hospitalar</option>
+                                    <option value="Medicina">Medicina</option>
+                                    <option value="Musicoterapia">Musicoterapia</option>
+                                    <option value="Naturologia">Naturologia</option>
+                                    <option value="Nutrição">Nutrição</option>
+                                    <option value="Obstetrícia">Obstetrícia</option>
+                                    <option value="Odontologia">Odontologia</option>
+                                    <option value="Oftálmica">Oftálmica</option>
+                                    <option value="Optometria">Optometria</option>
+                                    <option value="Psicologia">Psicologia</option>
+                                    <option value="Quiropraxia">Quiropraxia</option>
+                                    <option value="Radiologia">Radiologia</option>
+                                    <option value="Saúde Coletiva">Saúde Coletiva</option>
+                                    <option value="Terapia Ocupacional">Terapia Ocupacional</option>
+                                </select>
+                                <div class="invalid-feedback"> Please provide a valid state. </div>
+                            </div>
+                            <div class="col-md-4 mb-3"> <label for="escolaridade">Escolaridade</label> <select class="custom-select d-block w-100"
+                                    id="escolaridade" required="">
+                                    <option value="">escolha sua escolaridade...</option>
+                                    <option value="Educação infantil">Educação infantil</option>
+                                    <option value="Fundamental completo">Fundamental completo</option>
+                                    <option value="Fundamental imcompleto">Fundamental imcompleto</option>
+                                    <option value="Médio completo">Médio completo</option>
+                                    <option value="Médio imcompleto">Médio imcompleto</option>
+                                    <option value="Superior (Graduação)">Superior (Graduação)</option>
+                                    <option value="Pós-graduação ">Pós-graduação </option>
+                                    <option value="Mestrado">Mestrado</option>
+                                    <option value="Doutorado.">Doutorado</option>
+                                </select>
+                                <div class="invalid-feedback"> Please provide a valid state. </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 mb-3"> <label for="pais">País</label> <select class="custom-select d-block w-100"
+                                    id="pais" required="">
+                                    <option value="">escolha seu país...</option>
+                                    <option value="Brasil">Brasil</option>
+                                </select>
+                                <div class="invalid-feedback"> Please select a valid country. </div>
+                            </div>
+                            <div class="col-md-4 mb-3"> <label for="uf">UF</label> <select class="custom-select d-block w-100"
+                                    id="uf" required="">
+                                    <option value="">escolha seu estado...</option>
+                                    <option value="ce">CE</option>
+                                </select>
+                                <div class="invalid-feedback"> Please provide a valid state. </div>
+                            </div>
+                            <div class="col-md-4 mb-3"> <label for="cidade">Cidade</label> <select class="custom-select d-block w-100"
+                                    id="cidade" required="">
+                                    <option value="">escolha a ciadade...</option>
+                                    <option value="Abaiara"> Abaiara</option>
+                                    <option value="Acarape"> Acarape</option>
+                                    <option value="Acarau">Acarau</option>
+                                    <option value="Acopiara">Acopiara</option>
+                                    <option value="Aiuaba">Aiuaba</option>
+                                    <option value="Alcantaras">Alcantaras</option>
+                                    <option value="Altaneira">Altaneira</option>
+                                    <option value="Alto Santo">Alto Santo</option>
+                                    <option value="Amontada">Amontada</option>
+                                    <option value="Antonina do Norte">Antonina do Norte</option>
+                                    <option value="Apuiares">Apuiares</option>
+                                    <option value="Aquiraz">Aquiraz</option>
+                                    <option value="Aracati">Aracati</option>
+                                    <option value="Aracoiaba">Aracoiaba</option>
+                                    <option value="Ararenda">Ararenda</option>
+                                    <option value="Araripe">Araripe</option>
+                                    <option value="Aratuba">Aratuba</option>
+                                    <option value="Arneiroz">Arneiroz</option>
+                                    <option value="Assare">Assare</option>
+                                    <option value="Aurora">Aurora</option>
+                                    <option value="Baixio">Baixio</option>
+                                    <option value="Banabuiu">Banabuiu</option>
+                                    <option value="Barbalha">Barbalha</option>
+                                    <option value="Barreira">Barreira</option>
+                                    <option value="Barro">Barro</option>
+                                    <option value="Barroquinha">Barroquinha</option>
+                                    <option value="Baturite">Baturite</option>
+                                    <option value="Beberibe">Beberibe</option>
+                                    <option value="Bela Cruz">Bela Cruz</option>
+                                    <option value="Boa Viagem">Boa Viagem</option>
+                                    <option value="Brejo Santo">Brejo Santo</option>
+                                    <option value="Camocim">Camocim</option>
+                                    <option value="Campos Sales">Campos Sales</option>
+                                    <option value="Caninde">Caninde</option>
+                                    <option value="Capistrano">Capistrano</option>
+                                    <option value="Caridade">Caridade</option>
+                                    <option value="Carire">Carire</option>
+                                    <option value="Caririacu">Caririacu</option>
+                                    <option value="Carius">Carius</option>
+                                    <option value="Carnaubal">Carnaubal</option>
+                                    <option value="Cascavel">Cascavel</option>
+                                    <option value="Catarina">Catarina</option>
+                                    <option value="Catunda">Catunda</option>
+                                    <option value="Caucaia">Caucaia</option>
+                                    <option value="Cedro">Cedro</option>
+                                    <option value="Chaval">Chaval</option>
+                                    <option value="Choro">Choro</option>
+                                    <option value="Chorozinho">Chorozinho</option>
+                                    <option value="Coreau">Coreau</option>
+                                    <option value="Crateus">Crateus</option>
+                                    <option value="Crato">Crato</option>
+                                    <option value="Croata">Croata</option>
+                                    <option value="Cruz">Cruz</option>
+                                    <option value="Deputado Irapuan Pinheiro">Deputado Irapuan Pinheiro</option>
+                                    <option value="Erere">Erere</option>
+                                    <option value="Eusebio">Eusebio</option>
+                                    <option value="Farias Brito">Farias Brito</option>
+                                    <option value="Forquilha">Forquilha</option>
+                                    <option value="Fortaleza">Fortaleza</option>
+                                    <option value="Fortim">Fortim</option>
+                                    <option value="Frecheirinha">Frecheirinha</option>
+                                    <option value="General Sampaio">General Sampaio</option>
+                                    <option value="Graca">Graca</option>
+                                    <option value="Granja">Granja</option>
+                                    <option value="Granjeiro">Granjeiro</option>
+                                    <option value="Groairas">Groairas</option>
+                                    <option value="Guaiuba">Guaiuba</option>
+                                    <option value="Guaraciaba do Norte">Guaraciaba do Norte</option>
+                                    <option value="Guaramiranga">Guaramiranga</option>
+                                    <option value="Hidrolandia">Hidrolandia</option>
+                                    <option value="Horizonte">Horizonte</option>
+                                    <option value="Ibaretama">Ibaretama</option>
+                                    <option value="Ibiapina">Ibiapina</option>
+                                    <option value="Ibicuitinga">Ibicuitinga</option>
+                                    <option value="Icapui">Icapui</option>
+                                    <option value="Ico">Ico</option>
+                                    <option value="Iguatu">Iguatu</option>
+                                    <option value="Independencia">Independencia</option>
+                                    <option value="Ipaporanga">Ipaporanga</option>
+                                    <option value="Ipaumirim">Ipaumirim</option>
+                                    <option value="Ipu">Ipu</option>
+                                    <option value="Ipueiras">Ipueiras</option>
+                                    <option value="Iracema">Iracema</option>
+                                    <option value="Iraucuba">Iraucuba</option>
+                                    <option value="Itaicaba">Itaicaba</option>
+                                    <option value="Itaitinga">Itaitinga</option>
+                                    <option value="Itapage">Itapage</option>
+                                    <option value="Itapipoca">Itapipoca</option>
+                                    <option value="Itapiuna">Itapiuna</option>
+                                    <option value="Itarema">Itarema</option>
+                                    <option value="Itatira">Itatira</option>
+                                    <option value="Jaguaretama">Jaguaretama</option>
+                                    <option value="Jaguaribara">Jaguaribara</option>
+                                    <option value="Jaguaribe">Jaguaribe</option>
+                                    <option value="Jaguaruana">Jaguaruana</option>
+                                    <option value="Jardim">Jardim</option>
+                                    <option value="Jati">Jati</option>
+                                    <option value="Jijoca de Jericoacoara">Jijoca de Jericoacoara</option>
+                                    <option value="Juazeiro do Norte">Juazeiro do Norte</option>
+                                    <option value="Jucas">Jucas</option>
+                                    <option value="Lavras da Mangabeira">Lavras da Mangabeira</option>
+                                    <option value="Limoeiro do Norte">Limoeiro do Norte</option>
+                                    <option value="Madalena">Madalena</option>
+                                    <option value="Maracanau">Maracanau</option>
+                                    <option value="Maranguape">Maranguape</option>
+                                    <option value="Marco">Marco</option>
+                                    <option value="Martinopole">Martinopole</option>
+                                    <option value="Massape">Massape</option>
+                                    <option value="Mauriti">Mauriti</option>
+                                    <option value="Meruoca">Meruoca</option>
+                                    <option value="Milagres">Milagres</option>
+                                    <option value="Milha">Milha</option>
+                                    <option value="Miraima">Miraima</option>
+                                    <option value="Missao Velha">Missao Velha</option>
+                                    <option value="Mombaca">Mombaca</option>
+                                    <option value="Monsenhor Tabosa">Monsenhor Tabosa</option>
+                                    <option value="Morada Nova">Morada Nova</option>
+                                    <option value="Moraujo">Moraujo</option>
+                                    <option value="Morrinhos">Morrinhos</option>
+                                    <option value="Mucambo">Mucambo</option>
+                                    <option value="Mulungu">Mulungu</option>
+                                    <option value="Nova Olinda">Nova Olinda</option>
+                                    <option value="Nova Russas">Nova Russas</option>
+                                    <option value="Novo Oriente">Novo Oriente</option>
+                                    <option value="Ocara">Ocara</option>
+                                    <option value="Oros">Oros</option>
+                                    <option value="Pacajus">Pacajus</option>
+                                    <option value="Pacatuba">Pacatuba</option>
+                                    <option value="Pacoti">Pacoti</option>
+                                    <option value="Pacuja">Pacuja</option>
+                                    <option value="Palhano">Palhano</option>
+                                    <option value="Palmacia">Palmacia</option>
+                                    <option value="Paracuru">Paracuru</option>
+                                    <option value="Paraipaba">Paraipaba</option>
+                                    <option value="Parambu">Parambu</option>
+                                    <option value="Paramoti">Paramoti</option>
+                                    <option value="Pedra Branca">Pedra Branca</option>
+                                    <option value="Penaforte">Penaforte</option>
+                                    <option value="Pentecoste">Pentecoste</option>
+                                    <option value="Pereiro">Pereiro</option>
+                                    <option value="Pindoretama">Pindoretama</option>
+                                    <option value="Piquet Carneiro">Piquet Carneiro</option>
+                                    <option value="Pires Ferreira">Pires Ferreira</option>
+                                    <option value="Poranga">Poranga</option>
+                                    <option value="Porteiras">Porteiras</option>
+                                    <option value="Potengi">Potengi</option>
+                                    <option value="Potiretama">Potiretama</option>
+                                    <option value="Quiterianopolis">Quiterianopolis</option>
+                                    <option value="Quixada">Quixada</option>
+                                    <option value="Quixela">Quixela</option>
+                                    <option value="Quixeramobim">Quixeramobim</option>
+                                    <option value="Quixere">Quixere</option>
+                                    <option value="Redencao">Redencao</option>
+                                    <option value="Reriutaba">Reriutaba</option>
+                                    <option value="Russas">Russas</option>
+                                    <option value="Saboeiro">Saboeiro</option>
+                                    <option value="Salitre">Salitre</option>
+                                    <option value="Santa Quiteria">Santa Quiteria</option>
+                                    <option value="Santana do Acarau">Santana do Acarau</option>
+                                    <option value="Santana do Cariri">Santana do Cariri</option>
+                                    <option value="Sao Benedito">Sao Benedito</option>
+                                    <option value="Sao Goncalo do Amarante">Sao Goncalo do Amarante</option>
+                                    <option value="Sao Joao do Jaguaribe">Sao Joao do Jaguaribe</option>
+                                    <option value="Sao Luis do Curu">Sao Luis do Curu</option>
+                                    <option value="Senador Pompeu">Senador Pompeu</option>
+                                    <option value="Senador Sa">Senador Sa</option>
+                                    <option value="Sobral">Sobral</option>
+                                    <option value="Solonopole">Solonopole</option>
+                                    <option value="Tabuleiro do Norte">Tabuleiro do Norte</option>
+                                    <option value="Tamboril">Tamboril</option>
+                                    <option value="Tarrafas">Tarrafas</option>
+                                    <option value="Taua">Taua</option>
+                                    <option value="Tejucuoca">Tejucuoca</option>
+                                    <option value="Tiangua">Tiangua</option>
+                                    <option value="Trairi">Trairi</option>
+                                    <option value="Tururu">Tururu</option>
+                                    <option value="Ubajara">Ubajara</option>
+                                    <option value="Umari">Umari</option>
+                                    <option value="Umirim">Umirim</option>
+                                    <option value="Uruburetama">Uruburetama</option>
+                                    <option value="Uruoca">Uruoca</option>
+                                    <option value="Varjota">Varjota</option>
+                                    <option value="Varzea Alegre">Varzea Alegre</option>
+                                    <option value="Vicosa do Ceara">Vicosa do Ceara</option>
+                                </select>
+                                <div class="invalid-feedback"> Please provide a valid state. </div>
+                            </div>
+                        </div>
+                        <div class="mb-3"> <label for="cep">CEP</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="cep" required="" placeholder="ex: 62940000">
+                                <div class="invalid-feedback" style="width: 100%;"> Your username is required. </div>
+                            </div>
+                        </div>
+                        <div class="mb-3"> <label for="ddd">Contato</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend w-25">
+                                    <div class="col-10 col-md-5"><input type="text" class="form-control" id="ddd"
+                                            required="" placeholder="DDD"></div>
+                                </div>
+                                <input type="text" class="form-control" id="telefone" required="" placeholder="TELEFONE">
+                                <div class="invalid-feedback" style="width: 100%;"> Your username is required. </div>
+                            </div>
+                        </div>
+                        <div class="mb-3"> <label for="email">Email </label>
+                            <input type="email" class="form-control" id="email" placeholder="henrique@example.com">
+                            <div class="invalid-feedback"> Please enter a valid email address for shipping updates.
+                            </div>
+                        </div>
+                        <div class="mb-3"> <label for="username">Usuario</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="username" required="" placeholder="ex: Ryke">
+                                <div class="invalid-feedback" style="width: 100%;"> Your username is required. </div>
+                            </div>
+                        </div>
+                        <div class="mb-3"> <label for="senha">Senha</label>
+                            <input type="text" class="form-control" id="senha" required="" placeholder="ex: 123456">
+                            <div class="invalid-feedback"> Please enter your shipping address. </div>
+                        </div>
+                        <hr class="mb-4">
+                        <button id="cadastrar" onclick="cadastrar()" class="btn btn-primary btn-lg btn-block">Concluir&nbsp;
+                            seu cadastro</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="py-5 text-muted text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 my-4">
+                    <p class="mb-1">© 2017-2018 Company Name</p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#">Privacy</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">Terms</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">Support</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        //data de nascimento DN
+
+
+        function cadastrar() {
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            var cpf = document.getElementById("cpf").value;
+            var dn = document.getElementById("dn").value;
+            var sexo = document.getElementById("sexo").value;
+            var prof = document.getElementById("prof").value;
+            var escolaridade = document.getElementById("escolaridade").value;
+            var pais = document.getElementById("pais").value;
+            var uf = document.getElementById("uf").value;
+            var cidade = document.getElementById("cidade").value;
+            var cep = document.getElementById("cep").value;
+            var ddd = document.getElementById("ddd").value;
+            var telefone = document.getElementById("telefone").value;
+            var email = document.getElementById("email").value;
+            var username = document.getElementById("username").value;
+            var senha = document.getElementById("senha").value;
+            document.cookie = "firstName_" + username + "=" + firstName + ";path=/ ;expires=Thu, 18 Dec 2020 12:00:00 UTC";
+            document.cookie = "lastName_" + username + "=" + lastName + ";path=/ ;expires=Thu, 18 Dec 2020 12:00:00 UTC";
+            document.cookie = "cpf_" + username + "=" + cpf + ";path=/ ;expires=Thu, 18 Dec 2020 12:00:00 UTC";
+            document.cookie = "dn_" + username + "=" + dn + ";path=/ ;expires=Thu, 18 Dec 2020 12:00:00 UTC";
+            document.cookie = "sexo_" + username + "=" + sexo + ";path=/ ;expires=Thu, 18 Dec 2020 12:00:00 UTC";
+            document.cookie = "prof_" + username + "=" + prof + ";path=/ ;expires=Thu, 18 Dec 2020 12:00:00 UTC";
+            document.cookie = "escolaridade_" + username + "=" + escolaridade + ";path=/ ;expires=Thu, 18 Dec 2020 12:00:00 UTC";
+            document.cookie = "pais_" + username + "=" + pais + ";path=/ ;expires=Thu, 18 Dec 2020 12:00:00 UTC";
+            document.cookie = "uf_" + username + "=" + uf + ";path=/ ;expires=Thu, 18 Dec 2020 12:00:00 UTC";
+            document.cookie = "cidade_" + username + "=" + cidade + ";path=/ ;expires=Thu, 18 Dec 2020 12:00:00 UTC";
+            document.cookie = "cep_" + username + "=" + cep + ";path=/ ;expires=Thu, 18 Dec 2020 12:00:00 UTC";
+            document.cookie = "ddd_" + username + "=" + ddd + ";path=/ ;expires=Thu, 18 Dec 2020 12:00:00 UTC";
+            document.cookie = "telefone_" + username + "=" + telefone + ";path=/ ;expires=Thu, 18 Dec 2020 12:00:00 UTC";
+            document.cookie = "email_" + username + "=" + email + ";path=/ ;expires=Thu, 18 Dec 2020 12:00:00 UTC";
+            document.cookie = "username_" + username + "=" + username + ";path=/ ;expires=Thu, 18 Dec 2020 12:00:00 UTC";
+            document.cookie = "senha_" + username + "=" + senha + ";path=/ ;expires=Thu, 18 Dec 2020 12:00:00 UTC";
+
+            
+        }
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
