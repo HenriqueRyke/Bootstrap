@@ -1,0 +1,26 @@
+{
+  "name": "bootstrap",
+  "version": "1.0.0",
+  "description": "Site feito para demostrar elementos do BootStrap",
+  "main": "index.js",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/style.scss public/site.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/HenriqueRyke/Bootstrap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HenriqueRyke/Bootstrap/issues"
+  },
+  "homepage": "https://github.com/HenriqueRyke/Bootstrap#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.5"
+  }
+}
