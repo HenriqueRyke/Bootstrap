@@ -13,9 +13,22 @@ var userlogin = readCookie('username');
 var usersenha = readCookie('senha');
 var senhacookie = readCookie('senha_' + userlogin);
 
+
 if (userlogin == '') {
     
+    document.getElementById("aviso").classList.remove('d-none');
+    document.getElementById("form").classList.add('d-none');
+    document.getElementById("perfil").classList.add('d-none');
+    document.getElementById("detalhes").classList.add('d-none');
 } else {
+    if(userlogin == null){
+document.getElementById("aviso").classList.remove('d-none');
+document.getElementById("form").classList.add('d-none');
+document.getElementById("perfil").classList.add('d-none');
+document.getElementById("detalhes").classList.add('d-none');
+document.getElementById("sair").classList.add('d-none');
+
+    }
     if (usersenha == senhacookie) {
         var cep = readCookie('cep_' + userlogin);
         var cidade = readCookie('cidade_' + userlogin);
@@ -52,12 +65,13 @@ if (userlogin == '') {
         document.getElementById('uf').innerHTML = uf;
         document.getElementById('user').innerHTML = username;
     } else {
-        alert('senha incorreta');
-        window.location = '/';
+        alert('senha incorreta redirecionando para o login');
+        window.location = '../login/';
     }
 }
 function sair() {
-    window.location = '/';
+
+    window.location = '../login/';
     document.cookie = 'username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
     document.cookie = 'senha=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
 }

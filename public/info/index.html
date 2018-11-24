@@ -32,15 +32,16 @@
     
     <div class="collapse navbar-collapse" id="navbar16">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item"> <a class="nav-link text-white" href="#">Entrar</a> </li>
+        <li class="nav-item"> <a class="nav-link text-white" href="../login/">Entrar</a> </li>
         <li class="nav-item"> <a class="nav-link text-white" href="../cadastre-se/">Cadastre-se</a> </li>
-        <li class="nav-item"> <a class="nav-link text-white" href="../info/">Perfil</a> </li>
+        <li class="nav-item"> <a class="nav-link text-white" href="#">Perfil</a> </li>
+        <li class="nav-item"> <a class="nav-link text-white" onclick="sair()" id="sair" href="#">sair</a> </li>
       </div>
     </div>
   </nav>
 
   
-  <div class="py-5 text-center bg-danger">
+  <div class="py-5 text-center bg-danger d-none " id="aviso">
       <div class="container">
           <div class="row">
               <div class="bg-white p-5 mx-auto col-md-8 col-10">
@@ -48,15 +49,15 @@
                   <p class="mb-3 lead" contenteditable="true">Você precisar estar logado pra visualizar está página
                       corretamente.</p>
                   <p class="mb-4">Volte para a página de login e entre com seu usuario e senha<br>ou crie um perfil
-                      na página de cadastro.</p> <a class="btn btn-outline-primary mx-5" href="#">Login</a><a class="btn btn-outline-primary mx-5"
-                      href="#">Cadastra-se</a>
+                      na página de cadastro.</p> <a class="btn btn-outline-primary mx-5" href="../login/">Login</a><a class="btn btn-outline-primary mx-5"
+                      href="../cadastre-se/">Cadastra-se</a>
               </div>
           </div>
       </div>
   </div>
 
 
-  <div class="pt-5 pb-1">
+  <div class="pt-5 pb-1" id="form">
     <div class="container">
       <div class="row px-3">
         <div class="col-md-8 bg-primary text-white rounded shadow">
@@ -71,7 +72,7 @@
       </div>
     </div>
   </div>
-  <div class="py-4">
+  <div class="py-4" id="perfil">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -120,7 +121,7 @@
       </div>
     </div>
   </div>
-  <div class="">
+  <div class="" id="detalhes">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
