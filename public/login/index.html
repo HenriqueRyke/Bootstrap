@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+
+
+    <title>Login</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <div class="container"> <a class="navbar-brand" href="../">
+                <i class="fa fa-user-tie"></i>
+                <a class="text-white" href="../"><b> P.O.U.C.O.</b></a>
+            </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
+                data-target="#navbar16">
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar16">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"> <a class="nav-link text-white" href="#">Entrar</a> </li>
+                    <li class="nav-item"> <a class="nav-link text-white" href="../cadastre-se/">Cadastre-se</a> </li>
+                    <li class="nav-item"> <a class="nav-link text-white" href="../info/">Perfil</a> </li>
+            </div>
+        </div>
+    </nav>
+
+    <div class="py-5 text-center bg-danger">
+        <div class="container">
+            <div class="row">
+                <div class="bg-white p-5 mx-auto col-md-8 col-10">
+                    <h3 class="display-3">Não autorizado</h3>
+                    <p class="mb-3 lead" contenteditable="true">Você precisar estar logado pra visualizar está página
+                        corretamente.</p>
+                    <p class="mb-4">Volte para a página de login e entre com seu usuario e senha<br>ou crie um perfil
+                        na página de cadastro.</p> <a class="btn btn-outline-primary mx-5" href="#">Login</a><a class="btn btn-outline-primary mx-5"
+                        href="#">Cadastra-se</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="py-5 text-center bg-primary h-100" style="background-image: url('img/bg-login.jpg');background-size:cover;">
+        <div class="container">
+            <div class="row mb-5 d-flex justify-content-center flex-column text-white">
+                <i class="fa fa-user-tie fa-4x"></i> <br>
+                <h3>P.O.U.C.O.</h3>
+            </div>
+            <div class="row">
+                <div class="mx-auto col-md-6 col-10 bg-white p-5">
+                    <h1 class="mb-4" style="opacity: 0.5;">Faça seu Login</h1>
+                    <div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="insira seu email" id="username">
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="password" class="form-control" placeholder="insira sua senha" id="senha">
+                            <small class="form-text text-muted text-right">
+
+                            </small>
+                        </div>
+                        <button onclick="logar()" class="btn btn-primary">
+                            Login
+                        </button>
+
+                        <a href="../cadastre-se/" type="submit" class="btn btn-primary ml-5">
+                            Cadastre-se
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-3 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-6 p-3"> <i class="fa fa-user-tie fa-4x"></i> <br>
+                    <h3>P.O.U.C.O.</h3>
+                </div>
+                <div class="col-lg-4 col-6 p-3">
+                    <p> <a class=" text-dark" href="https://goo.gl/maps/AUq7b9W7yYJ2" target="_blank"> Rua Falsa, 100
+                            <br>Morada Nova - CE, BR</a> </p>
+                    <p> <a class=" text-dark" href="tel:+246 - 542 550 5462">+69 - 70 7070 7070</a> </p>
+                    <p class="mb-0 "> <a class=" text-dark" href="mailto:henriquersyt@gmail.com">reclame@pouco-importa.com</a>
+                    </p>
+                </div>
+                <div class="col-md-4 p-3">
+                    <h5> <b>Sobre</b> </h5>
+                    <p class="mb-0">Nossa meta é saber tudo sobre todos.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0 mt-2">2018 P.O.U.C.O.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.2.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <!-- Required meta tags -->
@@ -7,264 +7,179 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
     crossorigin="anonymous">
 
-  <title>Hello, world!</title>
+
+  <title>Perfil</title>
 </head>
 
 
-<body style="height:100vh;">
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <div class="container"> <a class="navbar-brand" href="../">
+        <i class="fa fa-user-tie"></i>
+        <a class="text-white" href="../"><b> P.O.U.C.O.</b></a>
+      </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
+      data-target="#navbar16">
+      <span class="navbar-toggler-icon"></span>
+      
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbar16">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"> <a class="nav-link text-white" href="#">Entrar</a> </li>
+        <li class="nav-item"> <a class="nav-link text-white" href="../cadastre-se/">Cadastre-se</a> </li>
+        <li class="nav-item"> <a class="nav-link text-white" href="../info/">Perfil</a> </li>
+      </div>
+    </div>
+  </nav>
+
   
-    <nav class="navbar navbar-light bg-light">
-        <div class="container pl-5 pr-5">
-            <a class="navbar-brand" id='username'> </a>
-            <ul class="navbar-nav left">
-                <li class="nav-item active">
-                  <a style="cursor:pointer" class="nav-link" onclick="sair()" >Sair <span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
-        </div>
-      </nav>
-
-
-  <div class="py-2">
-    <div class="container">
-      <div class="row">
-        <div class="text-center mx-auto col-lg-8 col-10">
-          <h1 class="mb-3">informações sobre <b id="nome"></b></h1>
-          <div id="carousel1" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
-            <div class="carousel-inner">
-              <div class="carousel-item active"> <img class="d-block w-100" src="https://static.pingendo.com/cover-moon.svg">
+  <div class="py-5 text-center bg-danger">
+      <div class="container">
+          <div class="row">
+              <div class="bg-white p-5 mx-auto col-md-8 col-10">
+                  <h3 class="display-3">Não autorizado</h3>
+                  <p class="mb-3 lead" contenteditable="true">Você precisar estar logado pra visualizar está página
+                      corretamente.</p>
+                  <p class="mb-4">Volte para a página de login e entre com seu usuario e senha<br>ou crie um perfil
+                      na página de cadastro.</p> <a class="btn btn-outline-primary mx-5" href="#">Login</a><a class="btn btn-outline-primary mx-5"
+                      href="#">Cadastra-se</a>
               </div>
-              <div class="carousel-item"> <img class="d-block w-100" src="https://static.pingendo.com/cover-bubble-light.svg">
-              </div>
-              <div class="carousel-item"> <img class="d-block w-100" src="https://static.pingendo.com/cover-bubble-dark.svg">
-              </div>
-            </div>
-            <ol class="carousel-indicators">
-              <li data-target="#carousel1" data-slide-to="0" class="active"> </li>
-              <li data-target="#carousel1" data-slide-to="1"> </li>
-              <li data-target="#carousel1" data-slide-to="2"> </li>
-            </ol>
           </div>
-        </div>
       </div>
-    </div>
   </div>
-  <div class="py-2" style="background-image: linear-gradient(to left bottom, rgba(189, 195, 199, .75), rgba(44, 62, 80, .75)); background-size: 100%;">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 px-4 px-md-0">
-          <div class="row mb-4">
-            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-1.svg"
-                width="100" alt="Card image cap"> </div>
-            <div class="col-9">
-              <h4>Email</h4>
-              <p class="mb-0" id="email"></p>
-            </div>
-          </div>
-          <div class="row mb-4">
-            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-2.svg"
-                width="100" alt="Card image cap"> </div>
-            <div class="col-9">
-              <h4> <b>CPF</b></h4>
-              <p class="mb-0" id="cpf"></p>
-            </div>
-          </div>
-          <div class="row mb-4">
-            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-3.svg"
-                width="100" alt="Card image cap"> </div>
-            <div class="col-9">
-              <h4> <b>CEP</b></h4>
-              <p class="mb-0" id="cep"></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 px-4 px-md-0">
-          <div class="row mb-4">
-            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-2.svg"
-                width="100" alt="Card image cap"> </div>
-            <div class="col-9">
-              <h4>nome e sobrenome</h4>
-              <p class="mb-0" id="nomecompleto"></p>
-            </div>
-          </div>
-          <div class="row mb-4">
-            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-3.svg"
-                width="100" alt="Card image cap"> </div>
-            <div class="col-9">
-              <h4> <b>data de nascimento</b></h4>
-              <p class="mb-0" id="dn"></p>
-            </div>
-          </div>
-          <div class="row mb-4">
-            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-1.svg"
-                width="100" alt="Card image cap"> </div>
-            <div class="col-9">
-              <h4> <b>Cidade</b></h4>
-              <p class="mb-0" id="cidade"></p>
-            </div>
-          </div>
-          <div class="row mb-4">
-            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-1.svg"
-                width="100" alt="Card image cap"> </div>
-            <div class="col-9">
-              <h4> <b>País</b></h4>
-              <p class="mb-0" id="pais"></p>
-            </div>
 
-          </div>
-          <div class="row mb-4">
-            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-1.svg"
-                width="100" alt="Card image cap"> </div>
-            <div class="col-9">
-              <h4> <b>UF</b></h4>
-              <p class="mb-0" id="uf"></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 px-4 px-md-0">
-          <div class="row mb-4">
-            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-3.svg"
-                width="100" alt="Card image cap"> </div>
-            <div class="col-9">
-              <h4>contato</h4>
-              <p class="mb-0" id="telefone"></p>
-            </div>
-          </div>
-          <div class="row mb-4">
-            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-1.svg"
-                width="100" alt="Card image cap"> </div>
-            <div class="col-9">
-              <h4> <b>Profissão</b></h4>
-              <p class="mb-0" id="prof"></p>
-            </div>
-          </div>
-          <div class="row mb-4">
-            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-1.svg"
-                width="100" alt="Card image cap"> </div>
-            <div class="col-9">
-              <h4>Genero</h4>
-              <p class="mb-0" id="genero"></p>
-            </div>
-          </div>
-          <div class="row mb-4">
-            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://static.pingendo.com/img-placeholder-2.svg"
-                width="100" alt="Card image cap"> </div>
-            <div class="col-9">
-              <h4> <b>escolaridade</b></h4>
-              <p class="mb-0" id="escolaridade"></p>
+
+  <div class="pt-5 pb-1">
+    <div class="container">
+      <div class="row px-3">
+        <div class="col-md-8 bg-primary text-white rounded shadow">
+          <div class="row px-5">
+            <div class="col-md-3 d-flex justify-content-center pt-3 pb-3"><i class="fa fa-4x mt-2 text-center fa-user-tie"></i></div>
+            <div class="col-md-8 pt-3">
+              <h1 class=""><b id="nome"></b></h1>
+              <p id="prof" class="lead"><br></p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <div class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-left"><b>Perfil</b></h1>
+          <div class="row">
+            <div class="col-md-12 bg-light m-2 rounded shadow">
+              <h2 class="">Informações pessoais</h2>
+              <div class="table-responsive">
+                <table class="table">
 
+                  <tbody>
+                    <tr>
+                      <td>Nome</td>
+                      <td id="nomecompleto"></td>
+                    </tr>
+                    <tr>
+                      <td>Email</td>
+                      <td id="email"></td>
+                    </tr>
+                    <tr>
+                      <td>usuario</td>
+                      <td id="user"></td>
+                    </tr>
+                    <tr>
+                      <td>DN</td>
+                      <td id="dn"></td>
+                    </tr>
+                    <tr>
+                      <td>CPF</td>
+                      <td id="cpf"></td>
+                    </tr>
+                    <tr>
+                      <td>Genero</td>
+                      <td id="genero"></td>
+                    </tr>
+                    <tr>
+                      <td>Escolaridade</td>
+                      <td id="escolaridade"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h4 class="py-3">Detalhes&nbsp;<span class="badge badge-pill badge-primary">!</span></h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header"> Endereço </div>
+            <div class="card-body">
+              <h4 id="cep"></h4>
+              <p id="uf"></p>
+              <p id="cidade"></p>
+              <p id="pais"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i id="email" class="fa fa-envelope px-3 text-primary"></i></li>
+            <li class="list-group-item"><i id="telefone" class="fa fa-phone px-3 text-primary"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <script>
-    function readCookie(name) {
-      var nameEQ = name + "=";
-      var ca = document.cookie.split(';');
-      for (var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-      }
-      return null;
-    }
-    // var userlogin = readCookie('username' );
-    var userlogin = readCookie('username');
+  <div class="py-3 bg-light mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-6 p-3"> <i class="fa fa-user-tie fa-4x"></i> <br>
+          <h3>P.O.U.C.O.</h3>
+        </div>
+        <div class="col-lg-4 col-6 p-3">
+          <p> <a class=" text-dark" href="https://goo.gl/maps/AUq7b9W7yYJ2" target="_blank"> Rua Falsa, 100
+              <br>Morada Nova - CE, BR</a> </p>
+          <p> <a class=" text-dark" href="tel:+246 - 542 550 5462">+69 - 70 7070 7070</a> </p>
+          <p class="mb-0 "> <a class=" text-dark" href="mailto:henriquersyt@gmail.com">reclame@pouco-importa.com</a>
+          </p>
+        </div>
+        <div class="col-md-4 p-3">
+          <h5> <b>Sobre</b> </h5>
+          <p class="mb-0">Nossa meta é saber tudo sobre todos.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p class="mb-0 mt-2">2018 P.O.U.C.O.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    var usersenha = readCookie('senha');
-    var senhacookie = readCookie('senha_' + userlogin);
+  <script src="../js/jquery-3.2.1.slim.min.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="info.js"></script>
 
-    if(userlogin == ''){
-    alert('nenhum usuario logado\n redirecionando para pagina inicial')
-
-    window.location="/"
-    }else{
-
-
-    
-
-
-    if (usersenha == senhacookie) {
-
-      var cep = readCookie('cep_' + userlogin);
-      var cidade = readCookie('cidade_' + userlogin);
-      var cpf = readCookie('cpf_' + userlogin);
-      var ddd = readCookie('ddd_' + userlogin);
-      var dn = readCookie('dn_' + userlogin);
-      var email = readCookie('email_' + userlogin);
-      var escolaridade = readCookie('escolaridade_' + userlogin);
-      var nome = readCookie('firstName_' + userlogin);
-      var sobrenome = readCookie('lastName_' + userlogin);
-
-      var pais = readCookie('pais_' + userlogin);
-      var prof = readCookie('prof_' + userlogin);
-      var genero = readCookie('sexo_' + userlogin);
-      var telefone = readCookie('telefone_' + userlogin);
-      var uf = readCookie('uf_' + userlogin);
-      var username = readCookie('username_' + userlogin);
-
-
-
-      document.getElementById("cep").innerHTML = cep
-      document.getElementById("cidade").innerHTML = cidade
-      document.getElementById("cpf").innerHTML = cpf
-      document.getElementById("dn").innerHTML = dn
-      document.getElementById("email").innerHTML = email
-      document.getElementById("escolaridade").innerHTML = escolaridade
-      document.getElementById("nome").innerHTML = nome
-
-      document.getElementById("nomecompleto").innerHTML = nome + " " + sobrenome
-
-      document.getElementById("pais").innerHTML = pais
-      document.getElementById("prof").innerHTML = prof
-      document.getElementById("genero").innerHTML = genero
-      document.getElementById("telefone").innerHTML = "(" + ddd + ")" + telefone
-      document.getElementById("uf").innerHTML = uf
-      document.getElementById("username").innerHTML = "seja bem vindo"+" "+username
-    } else {
-      alert('senha incorreta')
-      window.location="/"
-    }
-  }
-    function sair() {
-      window.location="/"
-      document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";      
-      document.cookie = "senha=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-  </script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>
