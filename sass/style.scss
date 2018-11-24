@@ -1,4 +1,4 @@
-// Custom.scss
+
 $theme-colors: (
   primary: #FF5722,
   secondary: #0288D1,
@@ -17,7 +17,7 @@ $body-color: #333;
 $body-color-inverse: invert($body-color) !default;
 $link-color: #2196F3;
 
-// Fonts
+
 $font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $headings-font-family: $font-family-base;
 $display-font-family: $font-family-base;
@@ -28,6 +28,6 @@ $lead-font-size:   1.30rem;
 html,body {
    height:100%;
 }
-// Option A: Include all of Bootstrap
+
 
 @import "node_modules/bootstrap/scss/bootstrap";
